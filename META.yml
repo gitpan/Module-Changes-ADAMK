@@ -1,0 +1,29 @@
+---
+abstract: 'Parse a traditional Changes file (as ADAMK interpretes it)'
+author:
+  - 'Adam Kennedy <adamk@cpan.org>'
+build_requires:
+  File::Spec: 0.80
+  Test::More: 0.47
+configure_requires:
+  ExtUtils::MakeMaker: 6.48
+distribution_type: module
+generated_by: 'Module::Install version 0.81'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+module_name: Module::Changes::ADAMK
+name: Module-Changes-ADAMK
+no_index:
+  directory:
+    - inc
+    - t
+requires:
+  DateTime: 0.4501
+  DateTime::Format::DateParse: 0.04
+  Object::Tiny: 1.03
+  perl: 5.005
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.01
