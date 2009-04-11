@@ -22,6 +22,7 @@ no_index:
     - t
 requires:
   DateTime: 0.4501
+  DateTime::Format::CLDR: 1.06
   DateTime::Format::DateParse: 0.04
   Object::Tiny: 1.03
   perl: 5.005
@@ -29,4 +30,4 @@ resources:
   ChangeLog: http://fisheye2.atlassian.com/changelog/cpan/trunk/Module-Changes-ADAMK
   license: http://dev.perl.org/licenses/
   repository: http://svn.ali.as/cpan/trunk/Module-Changes-ADAMK
-version: 0.02
+version: 0.03
