@@ -4,7 +4,7 @@ NAME
 
 SYNOPSIS
       my $changes  = Module::Changes::ADAMK->read('Changes');
-      my $latest   = $changes->current_release;
+      my $latest   = $changes->current;
       my $datetime = $changes->datetime; # DateTime object
 
 DESCRIPTION
