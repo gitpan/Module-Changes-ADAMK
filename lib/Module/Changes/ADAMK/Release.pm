@@ -10,7 +10,7 @@ use DateTime::Format::DateParse ();
 
 use vars qw{$VERSION};
 BEGIN {
-	$VERSION = '0.05';
+	$VERSION = '0.06';
 }
 
 use Module::Changes::ADAMK::Change ();
@@ -39,7 +39,7 @@ sub new {
 	# Find the header substrings
 	my $header = shift @lines;
 	unless ( $header =~ /^([\d_\.]+)(?:\s+(.+?\d{4}))?/ ) {
-		Carp::croak('Failed to find version for release');
+		Carp::croak("Failed to find version for release in '$header'");
 	}
 	$self->{version} = $1;
 	$self->{date}    = $2;
