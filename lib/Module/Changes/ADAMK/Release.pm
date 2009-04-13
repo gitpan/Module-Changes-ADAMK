@@ -1,7 +1,8 @@
 package Module::Changes::ADAMK::Release;
 
-use 5.005;
+use 5.006;
 use strict;
+use warnings;
 use Carp                        ();
 use Params::Util                '_INSTANCE';
 use DateTime                    ();
@@ -10,7 +11,7 @@ use DateTime::Format::DateParse ();
 
 use vars qw{$VERSION};
 BEGIN {
-	$VERSION = '0.06';
+	$VERSION = '0.07';
 }
 
 use Module::Changes::ADAMK::Change ();
@@ -122,6 +123,10 @@ sub as_string {
 		map { $_->as_string } $self->changes,
 	);
 	return join "\n", @lines;
+}
+
+sub roundtrips {
+	$_[0]->string eq $_[0]->as_string
 }
 
 1;
